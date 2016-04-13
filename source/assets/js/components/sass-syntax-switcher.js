@@ -18,11 +18,11 @@ $(function() {
 });
 
 $('[data-toggle="#acl-panel"]').click(function() {
-  $('.acl-panel').addClass('is-open');
-  $('.acl-panel').after('<div class="acl-panel-overlay"></div>');
+  $('.acl-panel').addClass('is-opened');
+  $('.acl-panel').after('<div class="backdrop"></div>');
 });
 
 $('.panel__close').click(function() {
   $('.acl-panel').removeClass('is-open');
-  $('.acl-panel-overlay').remove();
+  $('.parent').removeClass('is-open');
 });
