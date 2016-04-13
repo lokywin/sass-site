@@ -16,3 +16,13 @@ $(function() {
     }
   );
 });
+
+$('[data-toggle="#acl-panel"]').click(function() {
+  $('.acl-panel').addClass('is-open');
+  $('.acl-panel').after('<div class="acl-panel-overlay"></div>');
+});
+
+$('.panel__close').click(function() {
+  $('.acl-panel').removeClass('is-open');
+  $('.acl-panel-overlay').remove();
+});
