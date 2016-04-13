@@ -35,9 +35,6 @@
             %li=link_to "Release Notes", "/documentation/file.SASS_CHANGELOG.html"
             %li=link_to "Fork on Github", "https://github.com/nex3/sass"
 
-      - if content_for?(:section_bottom)
-        %section.section-bottom
-          .container= yield_content :section_bottom
 
     = partial "layouts/regions/contentinfo"
     = partial "layouts/foot/js"
